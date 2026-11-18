@@ -1,0 +1,34 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ── Environment & secrets ───────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Runtime data ────────────────────────────────────────────────────────────
+data/
+chroma/
+chroma_db/
+uploads/
+*.sqlite3
+*.log
+
+# ── Large / private documents (do not commit source PDFs) ───────────────────
+*.pdf
+
+# ── OS / editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

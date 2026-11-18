@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is the refund policy?",
+    "expected_answer": "The answer should describe the refund policy from the uploaded documents.",
+    "expected_has_answer": true,
+    "category": "factual"
+  },
+  {
+    "question": "Who is the CEO of the company?",
+    "expected_answer": "The answer should identify the CEO mentioned in the documents.",
+    "expected_has_answer": true,
+    "category": "factual"
+  },
+  {
+    "question": "What are the main products or services offered?",
+    "expected_answer": "The answer should list the key products or services described in the documents.",
+    "expected_has_answer": true,
+    "category": "factual"
+  },
+  {
+    "question": "What is the company's mission statement?",
+    "expected_answer": "The answer should contain the mission statement from the documents.",
+    "expected_has_answer": true,
+    "category": "factual"
+  },
+  {
+    "question": "What are the working hours or office hours?",
+    "expected_answer": "The answer should include the office hours mentioned in the documents.",
+    "expected_has_answer": true,
+    "category": "factual"
+  },
+  {
+    "question": "What is the contact email or phone number?",
+    "expected_answer": "The answer should contain contact details from the documents.",
+    "expected_has_answer": true,
+    "category": "factual"
+  },
+  {
+    "question": "What are the eligibility requirements mentioned in the documents?",
+    "expected_answer": "The answer should describe eligibility criteria found in the documents.",
+    "expected_has_answer": true,
+    "category": "factual"
+  },
+  {
+    "question": "Summarize the key findings or conclusions presented in the documents.",
+    "expected_answer": "The answer should provide a synthesis of the main findings across the documents.",
+    "expected_has_answer": true,
+    "category": "synthesis"
+  },
+  {
+    "question": "How do the different sections of the document relate to each other?",
+    "expected_answer": "The answer should explain the relationships and connections between document sections.",
+    "expected_has_answer": true,
+    "category": "synthesis"
+  },
+  {
+    "question": "What are the pros and cons discussed in the documents?",
+    "expected_answer": "The answer should list both advantages and disadvantages mentioned across the documents.",
+    "expected_has_answer": true,
+    "category": "synthesis"
+  },
+  {
+    "question": "Compare the different approaches or methods described in the documents.",
+    "expected_answer": "The answer should compare and contrast methods or approaches found in the documents.",
+    "expected_has_answer": true,
+    "category": "synthesis"
+  },
+  {
+    "question": "What is the timeline or sequence of events described?",
+    "expected_answer": "The answer should outline the chronological order of events from the documents.",
+    "expected_has_answer": true,
+    "category": "synthesis"
+  },
+  {
+    "question": "Based on the documents, what recommendations are made?",
+    "expected_answer": "The answer should summarize recommendations from across the documents.",
+    "expected_has_answer": true,
+    "category": "synthesis"
+  },
+  {
+    "question": "What is the capital of Mars?",
+    "expected_answer": "I don't have enough information in the provided documents to answer this question.",
+    "expected_has_answer": false,
+    "category": "unanswerable"
+  },
+  {
+    "question": "What will the stock price of Apple be next year?",
+    "expected_answer": "I don't have enough information in the provided documents to answer this question.",
+    "expected_has_answer": false,
+    "category": "unanswerable"
+  },
+  {
+    "question": "How many employees does Google have?",
+    "expected_answer": "I don't have enough information in the provided documents to answer this question.",
+    "expected_has_answer": false,
+    "category": "unanswerable"
+  },
+  {
+    "question": "What was the weather in Tokyo last Tuesday?",
+    "expected_answer": "I don't have enough information in the provided documents to answer this question.",
+    "expected_has_answer": false,
+    "category": "unanswerable"
+  },
+  {
+    "question": "Explain quantum computing in detail.",
+    "expected_answer": "I don't have enough information in the provided documents to answer this question.",
+    "expected_has_answer": false,
+    "category": "unanswerable"
+  },
+  {
+    "question": "Who won the FIFA World Cup in 2030?",
+    "expected_answer": "I don't have enough information in the provided documents to answer this question.",
+    "expected_has_answer": false,
+    "category": "unanswerable"
+  },
+  {
+    "question": "What is the author's opinion on the topic discussed in the documents?",
+    "expected_answer": "The answer should reflect the author's stated opinion or perspective from the documents.",
+    "expected_has_answer": true,
+    "category": "synthesis"
+  }
+]

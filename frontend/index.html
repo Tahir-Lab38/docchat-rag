@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocChat — Document Q&A Assistant</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+</head>
+<body>
+    <div id="toast-container" aria-live="polite"></div>
+
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="brand-mark">DC</div>
+                <div>
+                    <h1>DocChat</h1>
+                    <p>Document Q&A Assistant</p>
+                </div>
+                <button class="icon-btn sidebar-close" id="sidebar-close" aria-label="Close menu">✕</button>
+            </div>
+
+            <section class="panel">
+                <h2>1. Upload a PDF</h2>
+                <div class="drop-zone" id="drop-zone" tabindex="0" role="button" aria-label="Upload PDF">
+                    <div class="drop-icon">📄</div>
+                    <p class="drop-title">Drag & drop a PDF here</p>
+                    <p class="drop-sub">or click to browse files</p>
+                    <input type="file" id="file-input" accept=".pdf,application/pdf" hidden>
+                </div>
+                <div class="upload-progress" id="upload-progress">
+                    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+                    <p class="progress-text" id="progress-text">Uploading...</p>
+                </div>
+            </section>
+
+            <section class="panel panel-grow">
+                <div class="panel-head">
+                    <h2>2. Your documents</h2>
+                    <span class="badge" id="doc-count">0</span>
+                </div>
+                <div class="documents-list" id="documents-list">
+                    <div class="empty-docs">No documents uploaded yet.</div>
+                </div>
+            </section>
+
+            <section class="panel tips">
+                <h2>How to use</h2>
+                <ul>
+                    <li>Upload one or more PDF documents.</li>
+                    <li>Ask questions in plain language.</li>
+                    <li>Review cited sources in each answer.</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <button class="icon-btn menu-btn" id="sidebar-open" aria-label="Open menu">☰</button>
+                <div class="topbar-title">
+                    <h2>Ask questions about your documents</h2>
+                    <p id="status-text">Upload a PDF to get started.</p>
+                </div>
+                <button class="btn-secondary" id="clear-chat">New conversation</button>
+            </header>
+
+            <section class="chat-messages" id="chat-messages">
+                <div class="hero" id="hero">
+                    <h3>Welcome to DocChat</h3>
+                    <p>Upload a PDF (report, guideline, paper, or book) and ask questions. Answers include citations from your uploaded documents.</p>
+                    <div class="suggestions" id="suggestions">
+                        <button class="chip" data-q="Summarize the key points of this document.">Summarize key points</button>
+                        <button class="chip" data-q="What are the main findings or conclusions?">Main findings</button>
+                        <button class="chip" data-q="Are there any important recommendations or warnings?">Recommendations</button>
+                        <button class="chip" data-q="Explain the most important terms used in this document.">Explain key terms</button>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="composer">
+                <div class="input-wrap">
+                    <textarea id="chat-input" rows="1" placeholder="Ask a question about your uploaded PDFs..." maxlength="2000"></textarea>
+                    <button class="btn-send" id="send-btn" aria-label="Send">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+                <p class="composer-hint">Answers are based on uploaded documents and may be incomplete. Press Enter to send, Shift+Enter for a new line.</p>
+            </footer>
+        </main>
+    </div>
+
+    <div class="backdrop" id="backdrop"></div>
+    <script src="/script.js"></script>
+</body>
+</html>
